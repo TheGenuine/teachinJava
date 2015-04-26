@@ -143,7 +143,7 @@ if a class visibility is 'public' you can only define 1 class per file!
 3. methods  
   
 #### 1. Constructors
-... are required to instanciate a class. Every class has an invisible default constructor.  
+... are required to instanciate a class. Every class has an implicit default constructor.  
 The default constructor takes no arguments and does nothing but creating an instance of that class.
   
 If you want to give a class something on the way when creating an instance, you can implement your own custom constructor:
@@ -156,7 +156,9 @@ If you want to give a class something on the way when creating an instance, you 
 2. **MyClass**: the name of the constructor, has to be the same as the class name (with all the capitalisations). **No convention, thats how it is required by java**
 3. **String name**: parameters, like method params
 
-Constructors are an exception as they do not have an explicit return type (like methods), because their return type is always the class type itself.
+When you implement a custom constructor, the implicit default constructor disappears, thats going to be important in inheritance.
+
+Constructors are an exception in terms of declaration as they do not have an explicit return type (like methods), because their return type is always the class itself.
 
 You can have as many constructors as you want, as long as they have different *signatures*. (different parameters). Every call to a constructor creates a new instance of that class, they are no substitute for methods.
 
