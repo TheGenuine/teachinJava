@@ -13,7 +13,102 @@
 
 ****
 
+## 2. Data structures
+#### Datatypes
 
+The first thing I want to talk about are data types or data structures. Java has two types of data structures, **primitives** and **object/reference** data types. 
+
+**Primitives**  
+
+	int    (e.g. 123) 
+	short  () 
+	double (e.g. 17.2)  
+	float  (e.g. 3.141657943)  
+	long   (e.g. 12345678901234)  
+	char   (e.g. 'a')
+	byte   (e.g. )
+	boolean (true/false)
+
+**Object data classes**  
+
+	String
+	Boolean
+	Integer
+	Double
+	Long
+	Float
+	BigInt
+
+Even if primitives and data classes have the same name, they are **not** the same. The main difference is that you cannot call methods/functions on a primitive because they are no classes or objects. They are as the same says very primitive and do not have any further functionality. Additional functions like `toString()` are contributed by Object data classes which are just classes like every any other. 
+
+**Changing datatypes**
+Changing the datatype of a variable is not possible. However, taking a variable as input when creating another variable with a different data type is possible. But not all content types are compatible with each other.
+
+Numbers are all transferable into each other.  
+`int -> double` (additional precision will be added by appending a 0 `e.g. 12 -> 12.0`)
+the same for `int -> float`
+
+If numbers with a higher precision are transferred into numbers with lower precision  
+`e.g. double -> int` everything behind the comma will simply be cut off, no round up or down, just cut off.
+
+When creating a char from an int or any other numerical datatype you will end up with the equivalent character the given number. Always depending on the encoding you use.  (for UTF-8 see [Wikipedia](http://en.wikipedia.org/wiki/UTF-8#Codepage_layout))
+
+## 3. Variables
+
+	private static int sum = 15;
+
+<table>
+<tr>
+	<td>private</td> 
+	<td>visibility, e.g. private, public, protected</td>
+</tr>
+<tr>
+	<td>static</td>
+	<td>modifier</td>
+</tr>
+<tr>
+	<td>int</td>
+	<td>datatype,  once defined cannot be changed</td>
+</tr>
+<tr>
+	<td>sum</td>
+	<td>the variables name</td>
+</tr>
+<tr>
+	<td>= 15</td>
+	<td>initial value</td>
+</tr>
+</table>	
+
+#### Visibility
+Only necessary on class level, inside a method any variable is private to that method.
+
+<table>
+<tr>
+	<td>private</td>
+	<td>accessible only from within this class or inheriting classes</td>
+</tr>
+<tr>
+	<td>public</td>
+	<td>accessible AND changeable from everywhere</td>
+</tr>
+<tr>
+	<td>protected</td>
+	<td>visible and accessible only from classes within the same package</td>
+</tr>
+</table>	
+
+#### Modifiers
+<table>
+<tr>
+	<td>static</td>
+	<td>variable is static within this class, therefore it can be used in static methods without an instance of this class</td>
+</tr>
+<tr>
+	<td>final</td>
+	<td>the variables value cannot be changed</td>
+</tr>
+</table>	
 
 ## 6. Classes/Objects
 **Defining a class:**  
