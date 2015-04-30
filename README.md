@@ -12,6 +12,18 @@
 11. Packages
 
 ****
+## 1. Introduction
+
+Recently I've been asked to get someone started in Java and ultimately in Android development. To start developing Android apps you should be familiar with Java. I know that there are plenty of ways out there to build your app in all kinds of ways and languages.   
+However, since I'm a bit of a purist and from my experience developing on the Android platform I can say that more sophisticated features on Android are only available through the Android Java API I tend to ask people to get familiar with Java before they dive into Android development.
+
+But lets first focus on Java. 
+The person in question already had some experience in JavaScript, Python and Ruby which makes the whole endeavour easier. Because of that I'm only going to outline how things are done in Java as supposed to explaining basic computer science concepts.
+
+The following introduction to Java might help you if ...
+
+> ... you have a computer science degree, or  
+> ... you have experience working in any kind of programming or scripting language
 
 ## 2. Data structures
 #### Datatypes
